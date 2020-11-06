@@ -1,9 +1,13 @@
 {
   "name": "adonis5-firebase-admin",
   "version": "1.0.0",
-  "private": true,
+  "main": "build/index.js",
+  "types": "build/adonis-typings/index.d.ts",
+  "typings": "build/adonis-typings/index.d.ts",
   "scripts": {
-    "build": "node ace build --production",
+    "build": "npm run compile",
+    "clean": "del build",
+    "compile": "npm run lint && npm run clean && tsc",
     "start": "node server.js",
     "dev": "node ace serve --watch",
     "lint": "eslint . --ext=.ts",
@@ -25,7 +29,15 @@
   "dependencies": {
     "@adonisjs/core": "^5.0.4-preview-rc",
     "@adonisjs/repl": "^1.0.0",
+    "firebase-admin": "^9.3.0",
     "proxy-addr": "^2.0.6",
     "reflect-metadata": "^0.1.13"
-  }
+  },
+  "files": [
+    "build/adonis-typings",
+    "build/src",
+    "build/index.d.ts",
+    "build/index.js",
+    "build/providers"
+  ]
 }

@@ -5,7 +5,10 @@
   "compilerOptions": {
     "outDir": "build",
     "rootDir": "./",
-    "sourceMap": true,
-    "types": ["@adonisjs/core", "@adonisjs/repl"]
+    "esModuleInterop": true,
+    // Generate d.ts files
+    "declaration": true,
+    "resolveJsonModule": true,
+    "types": ["@adonisjs/core", "@adonisjs/repl", "firebase-admin"]
   }
 }
