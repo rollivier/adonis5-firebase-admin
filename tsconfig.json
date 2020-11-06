@@ -1,7 +1,12 @@
 {
-  "extends": "./node_modules/adonis-preset-ts/tsconfig",
-  "include": ["**/*"],
-  "exclude": ["node_modules", "build"],
+  "extends": "./node_modules/@adonisjs/mrm-preset/_tsconfig",
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ],
   "compilerOptions": {
     "outDir": "build",
     "rootDir": "./",
@@ -9,6 +14,10 @@
     // Generate d.ts files
     "declaration": true,
     "resolveJsonModule": true,
-    "types": ["@adonisjs/core", "@adonisjs/repl", "firebase-admin"]
+    "types": [
+      "@adonisjs/core",
+      "@adonisjs/repl",
+      "firebase-admin"
+    ]
   }
 }
