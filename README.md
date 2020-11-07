@@ -9,13 +9,39 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 # adonis5-firebase-admin
-> Tagline
+> Adonisjs 5, Firebase admin, Firebase for Adonis5
 
 [![typescript-image]][typescript-url] [![license-image]][license-url] [![npm-image]][npm-url] <!--[![circleci-image]][circleci-url]   -->
 
-A short brief
+Firebase admin providers for AdonisJS 5
 
 ## Installation
+```bash
+npm i --save adonis5-firebase-admin
+```
+
+Compile your code:
+
+```bash
+node ace serve --watch
+```
+Connect all dependences:
+```bash
+node ace invoke adonis5-firebase-admin
+```
+
+Add `adonis5-firebase-admin `  provider to AdonisJS  `.adonisrc.json` file :
+
+```json
+...
+"providers": [
+	...
+  "adonis5-firebase-admin"
+],
+...
+```
+
+
 
 ## Usage
 

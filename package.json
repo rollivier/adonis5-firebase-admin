@@ -1,12 +1,13 @@
 {
   "name": "adonis5-firebase-admin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "types": "build/adonis-typings/index.d.ts",
   "typings": "build/adonis-typings/index.d.ts",
   "scripts": {
     "build": "npm run compile",
     "clean": "del build",
-    "compile": "npm run lint && npm run clean && tsc",
+    "compile": "npm run lint && npm run clean && tsc && npm run copy:files",
+    "copy:files": "cp -R 'templates' 'build/templates'",
     "start": "node server.js",
     "dev": "node ace serve --watch",
     "format": "prettier --write .",
@@ -72,6 +73,21 @@
   "files": [
     "build"
   ],
+  "adonisjs": {
+    "types": "adonis5-firebase-admin",
+    "providers": [
+      "adonis5-firebase-admin"
+    ],
+    "templates": {
+      "basePath": "./build/templates",
+      "config": [
+        {
+          "src": "config.txt",
+          "dest": "firebase"
+        }
+      ]
+    }
+  },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"

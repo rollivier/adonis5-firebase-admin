@@ -1,0 +1,27 @@
+import Env from '@ioc:Adonis/Core/Env'
+import { FirebaseAdminConfig } from '@ioc:Adonis/Addons/FirebaseAdmin'
+
+const fireConfig : FirebaseAdminConfig = {
+  /*
+  |--------------------------------------------------------------------------
+  | Crendential
+  |--------------------------------------------------------------------------
+  |
+  | Path of the firebase credential json file
+  | for more details about credentials : https://firebase.google.com/docs/admin/setup#initialize-sdk
+  |
+  */
+  credential: Env.get('FIREBASE_CREDENTIAL') as string,
+  /*
+  |--------------------------------------------------------------------------
+  | Database Url
+  |--------------------------------------------------------------------------
+  |
+  |  Url of the firestore database
+  | for more details about databaseURL : https://firebase.google.com/docs/admin/setup#initialize-sdk
+  |
+  */
+  databaseURL: Env.get('FIREBASE_DATABASEURL') as string,
+}
+
+export default fireConfig
