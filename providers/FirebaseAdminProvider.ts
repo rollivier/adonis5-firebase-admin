@@ -21,23 +21,23 @@ import Config from '@ioc:Adonis/Core/Config'
 |
 */
 export default class FirebaseAdminProvider {
-  constructor(protected $container: IocContract) {}
+	constructor(protected $container: IocContract) {}
 
-  public register() {
-    this.$container.singleton('Adonis/Addons/FirebaseAdmin', () => {
-      return { ...firebaseAdmin }
-    })
-  }
+	public register() {
+		this.$container.singleton('Adonis/Addons/FirebaseAdmin', () => {
+			return { ...firebaseAdmin }
+		})
+	}
 
-  public async boot() {
-    const config: typeof Config = this.$container.use('Adonis/Core/Config')
-    firebaseAdmin.initializeApp({
-      credential: firebaseAdmin.credential.cert(config.get('firebase.credential')),
-      databaseURL: config.get('firebase.databaseURL'),
-    })
-  }
+	public async boot() {
+		const config: typeof Config = this.$container.use('Adonis/Core/Config')
+		firebaseAdmin.initializeApp({
+			credential: firebaseAdmin.credential.cert(config.get('firebase.credential')),
+			databaseURL: config.get('firebase.databaseURL'),
+		})
+	}
 
-  public async ready() {}
+	public async ready() {}
 
-  public async shutdown() {}
+	public async shutdown() {}
 }

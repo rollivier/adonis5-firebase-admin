@@ -1,6 +1,6 @@
 {
   "name": "adonis5-firebase-admin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "types": "build/adonis-typings/index.d.ts",
   "typings": "build/adonis-typings/index.d.ts",
   "scripts": {
@@ -70,9 +70,7 @@
   "license": "MIT",
   "main": "build/index.js",
   "files": [
-    "build/src",
-    "build/index.d.ts",
-    "build/index.js"
+    "build"
   ],
   "config": {
     "commitizen": {
@@ -82,5 +80,24 @@
   "np": {
     "contents": ".",
     "anyBranch": false
-  }
+  },
+  "description": "Firebase admin provider for AdonisJS 5",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rollivier/adonis5-firebase-admin.git"
+  },
+  "keywords": [
+    "Adonisjs",
+    "Adonis",
+    "5",
+    "firebase",
+    "firebase-admin",
+    "adonis-firebase",
+    "adonis5-firebase"
+  ],
+  "author": "Romain OLLIVIER <rollivier.opensource@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/rollivier/adonis5-firebase-admin/issues"
+  },
+  "homepage": "https://github.com/rollivier/adonis5-firebase-admin#readme"
 }
