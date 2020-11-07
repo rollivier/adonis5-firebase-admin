@@ -13,4 +13,3 @@ tmp
 *.log
 dist
 shrinkwrap.yaml
-npm-audit.html
