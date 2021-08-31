@@ -1,4 +1,4 @@
-import { IocContract } from '@adonisjs/fold'
+import { ApplicationContract } from '@ioc:Adonis/Core/Application'
 import * as firebaseAdmin from 'firebase-admin'
 import Config from '@ioc:Adonis/Core/Config'
 /*
@@ -21,16 +21,16 @@ import Config from '@ioc:Adonis/Core/Config'
 |
 */
 export default class FirebaseAdminProvider {
-	constructor(protected $container: IocContract) {}
+	constructor(protected app: ApplicationContract) {}
 
 	public register() {
-		this.$container.singleton('Adonis/Addons/FirebaseAdmin', () => {
+		this.app.container.singleton('Adonis/Addons/FirebaseAdmin', () => {
 			return { ...firebaseAdmin }
 		})
 	}
 
 	public async boot() {
-		const config: typeof Config = this.$container.use('Adonis/Core/Config')
+		const config: typeof Config = this.app.container.use('Adonis/Core/Config')
 		firebaseAdmin.initializeApp({
 			credential: firebaseAdmin.credential.cert(config.get('firebase.credential')),
 			databaseURL: config.get('firebase.databaseURL'),
