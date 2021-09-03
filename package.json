@@ -1,6 +1,6 @@
 {
   "name": "adonis5-firebase-admin",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "types": "build/adonis-typings/index.d.ts",
   "typings": "build/adonis-typings/index.d.ts",
   "scripts": {
