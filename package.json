@@ -22,8 +22,8 @@
     "sync-labels": "github-label-sync --labels ./node_modules/@adonisjs/mrm-preset/gh-labels.json rollivier/adonis5-firebase-admin"
   },
   "devDependencies": {
-    "@adonisjs/assembler": "^3.0.0",
-    "@adonisjs/mrm-preset": "^2.4.0",
+		"@adonisjs/assembler": "^5.0.0",
+		"@adonisjs/mrm-preset": "^2.4.0",
     "@types/node": "^14.14.6",
     "adonis-preset-ts": "^1.1.0",
     "commitizen": "^4.2.2",
@@ -48,10 +48,10 @@
     "youch-terminal": "^1.0.1"
   },
   "dependencies": {
-    "@adonisjs/core": "^5.0.4-preview-rc",
-    "@adonisjs/repl": "^1.0.0",
-    "firebase-admin": "^9.3.0",
-    "proxy-addr": "^2.0.6",
+		"@adonisjs/core": "^5.1.0",
+		"@adonisjs/repl": "^3.0.0",
+		"firebase-admin": "^9.11.1",
+		"proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13"
   },
   "husky": {
