@@ -34,6 +34,7 @@ export default class FirebaseAdminProvider {
 		firebaseAdmin.initializeApp({
 			credential: firebaseAdmin.credential.cert(config.get('firebase.credential')),
 			databaseURL: config.get('firebase.databaseURL'),
+			storageBucket: config.get('firebase.storageBucket') || undefined,
 		})
 	}
 
