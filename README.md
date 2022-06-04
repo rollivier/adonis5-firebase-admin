@@ -1,17 +1,21 @@
+# ⛔️ DEPRECATED
+
+**Actually, we don't use this repository anymore and it suffers from a lack of dependency updates that can create security issues. You can freely use the code to create your own firebase integration**
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 ## Table of contents
 
 - [Adonis5-Firebase-Admin](#adonis5-firebase-admin)
-  - [Installation](#installation)
-  - [Usage](#usage)
+- [Installation](#installation)
+- [Usage](#usage)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# Adonis5-Firebase-Admin
+## Adonis5-Firebase-Admin
 > Adonisjs 5, Firebase admin, Firebase for Adonis5
 
-[![typescript-image]][typescript-url] [![license-image]][license-url] [![npm-image]][npm-url] <!--[![circleci-image]][circleci-url]   -->
+[![nomaintenance-image]][nomaintenance-url] [![typescript-image]][typescript-url] [![license-image]][license-url] [![npm-image]][npm-url] <!--[![circleci-image]][circleci-url]   -->
 
 Firebase admin providers for AdonisJS 5
 
@@ -69,7 +73,6 @@ export default class Authenticate {
 For additional details of Firebase Admin API, please check the Firebase SDK documentation by this link [Firebase docs](https://firebase.google.com/docs/admin/setup)
 
 
-
 <!--[circleci-image]: https://img.shields.io/circleci/project/github/rollivier/adonis5-firebase-admin/master.svg?style=for-the-badge&logo=circleci
 [circleci-url]: https://circleci.com/gh/rollivier/adonis5-firebase-admin "circleci"-->
 
@@ -81,3 +84,6 @@ For additional details of Firebase Admin API, please check the Firebase SDK docu
 
 [license-image]: https://img.shields.io/npm/l/adonis5-firebase-admin?color=blueviolet&style=for-the-badge&service=github
 [license-url]: LICENSE.md "license"
+
+[nomaintenance-image]: http://unmaintained.tech/badge.svg
+[nomaintenance-url]: http://unmaintained.tech
