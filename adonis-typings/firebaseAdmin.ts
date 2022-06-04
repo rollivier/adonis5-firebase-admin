@@ -5,5 +5,6 @@ declare module '@ioc:Adonis/Addons/FirebaseAdmin' {
 	export interface FirebaseAdminConfig {
 		credential: string
 		databaseURL: string
+    storageBucket?: string;
 	}
 }
